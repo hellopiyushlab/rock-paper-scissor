@@ -13,10 +13,12 @@ body {
 }
 h1, h2, h3, h4, h5, h6, p, div {
     font-family: 'Press Start 2P', cursive;
+    /* font-family: "Protest Guerrilla", sans-serif; */
 }
 
 hr {
     width: 80vw;
+    margin: 5px;
 }
 
 .visuals {
@@ -67,8 +69,10 @@ hr {
 
 .playAgainButton {
     cursor: pointer;
-    padding:15px;
+    padding:10px;
     border: solid black 2px;
+    text-align: center;
+    width: max-content;
 }
 
 #playerChoiceIcon,
