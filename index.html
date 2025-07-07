@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPS</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
     <script src="script.js"></script>
@@ -25,12 +29,16 @@
 
     <div class="visuals">
         <div>
-            <p>?</p>
+            <p id="playerChoiceIcon">
+                <i class="fa-solid fa-circle-question"></i>
+            </p>
             <p id="playerScore">Player: 0</p>
         </div>
         <div id="result"></div>
         <div>
-            <p>?</p>
+            <p id="computerChoiceIcon">
+                <i class="fa-solid fa-circle-question"></i>
+            </p>
             <p id="computerScore">Computer: 0</p>
         </div>
     </div>
@@ -39,16 +47,24 @@
 
     <div class="choices">
         <div class="choicesFirstRow">
-            <div class="choiceButton" onclick="computerTurn(0)">Rock</div>
+            <div class="choiceButton" onclick="computerTurn(0)">
+                <i class="fa-solid fa-hand-back-fist"></i>
+            </div>
         </div>
         <div class="choicesSecondRow">
-            <div class="choiceButton" onclick="computerTurn(1)">Paper</div>
-            <div class="choiceButton" onclick="computerTurn(2)">Scissors</div>
+            <div class="choiceButton" onclick="computerTurn(1)">
+                <i class="fa-solid fa-hand"></i>
+            </div>
+            <div class="choiceButton" onclick="computerTurn(2)">
+                <i class="fa-solid fa-hand-scissors"></i>
+            </div>
         </div>
     </div>
 
     <div class="playAgainClass">
-        <div class="playAgainButton" onclick="playAgain()">Reset because me scared!</div>
+        <div class="playAgainButton" onclick="playAgain()">
+            Reset because me scared!
+        </div>
     </div>
 
     <div class="footer"></div>
