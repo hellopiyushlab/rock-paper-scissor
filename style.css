@@ -11,10 +11,7 @@ body {
 .heading {
     text-align: center;
 }
-h1, h2, h3, h4, h5, h6, p, div {
-    font-family: 'Press Start 2P', cursive;
-    /* font-family: "Protest Guerrilla", sans-serif; */
-}
+
 
 hr {
     width: 80vw;
@@ -23,7 +20,7 @@ hr {
 
 .visuals {
     display: flex;
-    width: 100vw;
+    width: 80vw;
     justify-content: space-around;
 }
 
