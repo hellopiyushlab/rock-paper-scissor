@@ -3,7 +3,7 @@ body {
     margin: 0px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 100vh;
 }
@@ -56,9 +56,19 @@ hr {
     justify-content: center;
 }
 
+.playAgain {
+    display: flex;
+    justify-content: center;
+}
+
+.playAgainButton {
+    cursor: pointer;
+    padding:15px;
+    border: solid black 2px;
+}
 
 /* for better visuals while coding */
-.visuals div {
+/* .visuals div {
     border: 2px solid cyan;
 }
 
@@ -70,4 +80,4 @@ hr {
 .choicesFirstRow div,
 .choicesSecondRow div {
     border: 1px solid cyan;
-}
+} */

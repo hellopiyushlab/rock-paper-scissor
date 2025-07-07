@@ -26,11 +26,12 @@
     <div class="visuals">
         <div>
             <p>?</p>
-            <p id="playerScore">Player:</p>
+            <p id="playerScore">Player: 0</p>
         </div>
+        <div id="result"></div>
         <div>
             <p>?</p>
-            <p id="computerScore">Computer:</p>
+            <p id="computerScore">Computer: 0</p>
         </div>
     </div>
 
@@ -44,6 +45,10 @@
             <div class="choiceButton" onclick="computerTurn(1)">Paper</div>
             <div class="choiceButton" onclick="computerTurn(2)">Scissors</div>
         </div>
+    </div>
+
+    <div class="playAgainClass">
+        <div class="playAgainButton" onclick="playAgain()">Reset because me scared!</div>
     </div>
 
     <div class="footer"></div>
