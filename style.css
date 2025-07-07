@@ -64,6 +64,11 @@ hr {
     margin: 10px;
     /* border: solid 2px black;
     border-radius: 5px; */
+    transition: transform 0.2s ease; /* Smooth transition */
+}
+.choiceButton:hover {
+    transform: scale(1.15); /* Zoom in on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 .choicesSecondRow {
@@ -107,6 +112,10 @@ hr {
 }
 .light-theme * {
     color: rgb(85, 84, 84);
+}
+
+.dark-theme .choiceButton:hover {
+    box-shadow: 0 4px 20px rgba(190, 255, 171, 1);
 }
 
 /* for better visuals while coding */
