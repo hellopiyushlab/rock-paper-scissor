@@ -3,14 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RPS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <script src="script.js"></script>
-    <button onclick="computerTurn(0)">Rock</button><br>
-    <button onclick="computerTurn(1)">Paper</button><br>
-    <button onclick="computerTurn(2)">Scissor</button><br>
+
+    <!-- <div class="choiceButton" onclick="computerTurn(0)">🪨</div>
+    <div class="choiceButton" onclick="computerTurn(1)">📜</div>
+    <div class="choiceButton" onclick="computerTurn(2)">✂️</div>
+
     <p id="playerScore">Player:</p>
-    <p id="computerScore">Computer:</p>
+    <p id="computerScore">Computer:</p> -->
+
+    <div class="header"></div>
+
+    <div class="heading">
+        <h1>WHAT YOU GON' CHOOSE?</h1>
+        <h3>First to score 5 points win</h3>
+    </div>
+
+    <div class="visuals">
+        <div>
+            <p>?</p>
+            <p id="playerScore">Player:</p>
+        </div>
+        <div>
+            <p>?</p>
+            <p id="computerScore">Computer:</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="choices">
+        <div class="choicesFirstRow">
+            <div class="choiceButton" onclick="computerTurn(0)">Rock</div>
+        </div>
+        <div class="choicesSecondRow">
+            <div class="choiceButton" onclick="computerTurn(1)">Paper</div>
+            <div class="choiceButton" onclick="computerTurn(2)">Scissors</div>
+        </div>
+    </div>
+
+    <div class="footer"></div>
+
 </body>
 </html>
