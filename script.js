@@ -92,3 +92,14 @@ function playAgain() {
     document.getElementById("playerChoiceIcon").innerHTML = '<i class="fa-solid fa-circle-question"></i>';
     document.getElementById("computerChoiceIcon").innerHTML = '<i class="fa-solid fa-circle-question"></i>';
 }
+
+function toggleTheme(){
+    console.log("theme changing works!");
+    if (document.body.classList.contains("dark-theme")) {
+        document.body.classList.remove("dark-theme");
+        document.body.classList.add("light-theme");
+    } else {
+        document.body.classList.remove("light-theme");
+        document.body.classList.add("dark-theme");
+    }
+}

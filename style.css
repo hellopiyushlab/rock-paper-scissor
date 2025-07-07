@@ -8,6 +8,19 @@ body {
     height: 100vh;
 }
 
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    /* padding: 10px; */
+}
+.header i {
+    cursor: pointer;
+    margin: 10px;
+    font-size: 25px;
+}
+
 .heading {
     text-align: center;
 }
@@ -30,7 +43,7 @@ hr {
     width: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -75,6 +88,25 @@ hr {
 #playerChoiceIcon,
 #computerChoiceIcon {
     font-size: 50px;
+    margin: 0%;
+}
+
+.footer {
+    height:10px;
+}
+
+.dark-theme {
+    background-color: black;
+}
+.light-theme {
+    background-color: white;
+}
+
+.dark-theme * {
+  color: rgb(190, 255, 171);
+}
+.light-theme * {
+    color: rgb(85, 84, 84);
 }
 
 /* for better visuals while coding */

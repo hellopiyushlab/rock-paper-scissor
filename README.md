@@ -6,5 +6,5 @@
 - [x] Make the Icons change when a choice is made
 - [x] New DOM
 - [x] CSS
-- [ ] Deployment
-- [ ] Multiplayer?
+- [ ] Make it pretty
+
