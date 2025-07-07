@@ -90,5 +90,5 @@ function playAgain() {
     document.getElementById("playerScore").innerHTML = "Player: " + playerScoreCount;
     document.getElementById("result").innerHTML = '';
     document.getElementById("playerChoiceIcon").innerHTML = '<i class="fa-solid fa-circle-question"></i>';
-    document.getElementById("computerChoiceIcon").innerHTML = '<i class="fa-solid fa-circle-question"></i>  `';
+    document.getElementById("computerChoiceIcon").innerHTML = '<i class="fa-solid fa-circle-question"></i>';
 }
