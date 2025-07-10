@@ -27,6 +27,8 @@ function computerTurn(playerChoice, max=3) {
     if (playerChoice === computerChoice) {
         console.log("draw");
         document.getElementById("result").innerHTML = "DRAW";
+        document.getElementById("playerChoiceIcon").style.color = "rgb(85, 84, 84)";
+        document.getElementById("computerChoiceIcon").style.color = "rgb(85, 84, 84)";
     } 
     else if (computerChoice+1 === playerChoice) {
         document.getElementById("result").innerHTML = "YOU SCORED";
@@ -53,6 +55,8 @@ function playerWins() {
     playerScoreCount++; // increment the score
     console.log("Player Score: " + playerScoreCount)
     document.getElementById("playerScore").innerHTML = "Player: " + playerScoreCount;
+    document.getElementById("playerChoiceIcon").style.color = "green";
+    document.getElementById("computerChoiceIcon").style.color = "red";
     if (playerScoreCount === 5) {
         victory();
     }
@@ -62,6 +66,8 @@ function computerWins() {
     computerScoreCount++; // increment the score
     console.log("Computer Score: " + computerScoreCount);
     document.getElementById("computerScore").innerHTML = "Computer: " + computerScoreCount;
+    document.getElementById("playerChoiceIcon").style.color = "red";
+    document.getElementById("computerChoiceIcon").style.color = "green";
     if (computerScoreCount === 5) {
         defeat();
     }
@@ -91,6 +97,8 @@ function playAgain() {
     document.getElementById("result").innerHTML = '';
     document.getElementById("playerChoiceIcon").innerHTML = '<i class="fa-solid fa-circle-question"></i>';
     document.getElementById("computerChoiceIcon").innerHTML = '<i class="fa-solid fa-circle-question"></i>';
+    document.getElementById("playerChoiceIcon").style.color = "rgb(85, 84, 84)";
+    document.getElementById("computerChoiceIcon").style.color = "rgb(85, 84, 84)";
 }
 
 function toggleTheme(){

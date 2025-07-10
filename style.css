@@ -118,6 +118,10 @@ hr {
     box-shadow: 0 4px 20px rgba(190, 255, 171, 1);
 }
 
+.iconSize {
+    transform: scale(1.15);
+}
+
 /* for better visuals while coding */
 /* .visuals div {
     border: 2px solid cyan;
